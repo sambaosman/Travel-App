@@ -1,3 +1,5 @@
-# Weather Journal
+# Travel App
+
 ## What Was Done
-### Weather information was taken from a Weather API and was used to post the weather of the specific zip code a user had entered and how the user was feeling.
+
+### Given a location and date, this app uses the Geonames API to get location coordinates. Then combines with date to get weather information. Weather information was taken from a Weather API. All info displayed.
