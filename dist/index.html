@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Travel Journal</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap"
+      rel="stylesheet"
+    />
+  <link href="main.css" rel="stylesheet"></head>
+  <body>
+    <div id="app">
+      <div class="holder headline">
+        Travel App
+      </div>
+      <div class="holder zip">
+        <label for="location">Enter Location</label>
+        <input type="text" id="location" placeholder="enter location here" />
+        <label for="date">Enter Date</label>
+        <input
+          type="date"
+          id="date"
+          name="date"
+          value="2020-08-01"
+          min="2020-08-01"
+          max="2021-12-31"
+        />
+        <button type="button" id="submitButton">Submit</button>
+        <div class="holder zip">
+          <div id="weather"></div>
+          <img id="locationImage"></img>
+      </div>
+      <button type="button" id="saveButton">Save Trip</button>
+      <button type="button" id="removeButton">Remove Trip</button>
+    </div>
+  <script type="text/javascript" src="main.js"></script></body>
+</html>
