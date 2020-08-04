@@ -10,9 +10,17 @@ const weatherKey = "e8f30827ad404087893a19676b05c82f";
 const pixaUrl = "https://pixabay.com/api/";
 const pixaKey = "17737691-ffb0e3b9f1b10bdc03a3a8df8";
 
-document.getElementById("submitButton").addEventListener("click", handleSubmit);
-document.getElementById("saveButton").addEventListener("click", saveTrip);
-document.getElementById("removeButton").addEventListener("click", removeTrip);
+if (document.getElementById("submitButton")) {
+  document
+    .getElementById("submitButton")
+    .addEventListener("click", handleSubmit);
+}
+if (document.getElementById("saveButton")) {
+  document.getElementById("saveButton").addEventListener("click", saveTrip);
+}
+if (document.getElementById("removeButton")) {
+  document.getElementById("removeButton").addEventListener("click", removeTrip);
+}
 
 function getCoordinates(location) {
   location = location.replace(" ", "+");
